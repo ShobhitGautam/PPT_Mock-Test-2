@@ -1,0 +1,55 @@
+1)Static Position:
+The static position is the default position for HTML elements. Elements with static position are positioned based on the normal flow of the document.
+html - 
+<div class="static">Static Position</div>
+css-
+.static {
+  position: static;
+}
+2)Fixed Position-
+The fixed position is positioned relative to the viewport. The element remains fixed in its position even when the page is scrolled.
+html -
+<div class="fixed">Fixed Position</div>
+css-
+.fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+3)Sticky Position:
+The sticky position is a mix of relative and fixed positions. It behaves like a relative position until the element reaches a specified threshold, and then it becomes fixed.
+html -
+<div class="sticky">Sticky Position</div>
+css -
+.sticky {
+  position: sticky;
+  top: 20px;
+}
+4)Relative Position:
+The relative position is positioned relative to its normal position. It allows you to adjust an element's position using the top, right, bottom, and left properties.
+html-
+<div class="relative">Relative Position</div>
+css -
+.relative {
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+5)Absolute Position:
+The absolute position is positioned relative to the nearest positioned ancestor. If no positioned ancestor is found, it is positioned relative to the initial containing block.
+html -
+<div class="container">
+  <div class="absolute">Absolute Position</div>
+</div>
+css -
+.container {
+  position: relative;
+  height: 200px;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
